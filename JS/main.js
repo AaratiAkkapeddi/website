@@ -24,8 +24,25 @@ $(document).ready (function () {
           sT = $(this).scrollTop();
             if(sT >= 200){
                 $('#hamburger-button').addClass('white');
+                $('.home').addClass('top');
             }else{
                 $('#hamburger-button').removeClass('white');
+                $('.home').removeClass('top');
             }
     });
 });
+
+/*<><><><><><><><><><>SPAN FLIP<><><><><><><><><><><><><>*/
+
+var spans = $('#title span');
+
+function addClasses(){
+ $('#title').addClass('cute');
+}
+function removeClasses(){
+ $('#title').removeClass('cute');
+}
+
+$('#title').on('mouseover', addClasses);
+
+$('#title').on('mouseout', removeClasses);

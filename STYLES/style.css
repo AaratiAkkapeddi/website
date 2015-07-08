@@ -121,9 +121,14 @@ left:0;
   position:fixed;
   height:100vh;
   width:100vw;
-  z-index: -999;
   margin-top:-100vh;
+  z-index: 999;
 }
+
+.top{
+  z-index: -999;
+}
+
 .home h1{
   text-align: center;
   margin-top:25%;
@@ -133,6 +138,9 @@ left:0;
   text-transform: uppercase;
 }
 
+#title{
+  color:black;
+}
 /*<><><><><><><><>ABOUT<><><><><><><><><><>*/
 .about {
   background-color: black;
@@ -140,4 +148,20 @@ left:0;
   height:100vh;
   width:100vw;
   margin-top:100vh;
+  text-align: center;
+  font-size: 3em;
+}
+.about p{
+
+}
+
+/*<><><><><>CUTE TITLE FLIP<><><><><><><><>*/
+
+
+#title.cute > span{
+  transform:rotateY(360deg);
+}
+
+#title>span{
+  transition:.5s;
 }
