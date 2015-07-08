@@ -111,8 +111,10 @@ left:0;
   transition-delay:.3s;
 }
 
-
-
+/*<><><><><><><><>scroll color<><><><><><><><><><>*/
+#hamburger-button.white > span{
+  background-color: white;
+}
 /*<><><><><><><><>HOME<><><><><><><><><><>*/
 
 .home{
