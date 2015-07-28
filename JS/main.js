@@ -91,7 +91,7 @@ $(".anchorLink").click( function (event) {
 /*<><><><><><>AUTO SLIDER<><><><><>*/
 $(document).ready(function () {
 
-  var change_img_time = 4000,
+  var change_img_time = 8000,
       transition_speed = 400;
 
   var listItems = $(".csslider > ul").children('li'),
