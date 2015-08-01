@@ -8,6 +8,7 @@ function slideMenu(){
   $('.technologies').toggleClass('hideme');
   // $('.poop').toggleClass('hideme2');
   $('.csslider').toggleClass('hideme2');
+  $('.contact a').toggleClass('hideme2');
   if(!$('#hamburger-button').hasClass('white') ||
     ((!$('.navbar').hasClass('open')) && (sT < 200))){
     $('#hamburger-button').toggleClass('white');
@@ -18,6 +19,12 @@ $('#hamburger-button').click(function(){
   console.log('trying');
   animateHamburger();
   slideMenu();/*attaching click handler to burger*/
+});
+
+$('.navbar ul li a').click(function(){
+  console.log('mew');
+  animateHamburger();
+  slideMenu();
 });
 
 var sT;
@@ -50,14 +57,12 @@ $('#title').on('mouseover', addClasses);
 
 $('#title').on('mouseout', removeClasses);
 
-$(document).ready(function(){
-  addClasses();
-  setTimeout(removeClasses,6000);
-});
+
 
 
 /*<><><><><><><><><>HOVER SCROLL<><><><><><><><><><><><>*/
 $(document).ready(function() {
+  addClasses();
     var count;
     var interval;
 
